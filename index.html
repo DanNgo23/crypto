@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <title>Cryptocurrency Market Visualizations</title>
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="icon" href="data:,">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <a class="navbar-brand"><img id="logo" src="img/logo.png"></a>
+            
+                <!-- Trigger/Open The Modal -->
+                <a id="get-started" class="btn"><strong>Get Started Here</strong></a>
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h4><strong>Getting Started</strong></h4>
+                        </div>
+                        <div class="modal-body"> 
+                            <p>
+                                This application I created displays the <b>5 largest cryptocurrencies</b> and their fluctuations in <b>price</b>,
+                                <b>trading volume</b>, and <b>market capitalization</b> over time.
+                            </p>
+                            <p>
+                                I used Python to scrape all the data from <b><i><a href="https://coinmarketcap.com/" target="_blank">coinmarketcap.com</a>.</i></b>
+                            </p>
+                            <p>
+                                To explore, click <b>INSTRUCTIONS</b> to officially begin.
+                            </p>
+                          
+                        </div>
+                      <!--
+                      <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                      </div> -->
+                    </div>
+                </div>
+                
+                <a id="instructions" class="btn"><strong>Instructions</strong></a>
+                <!-- The 2nd Modal -->
+                <div id="myModal2" class="modal">
+                
+                  <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h4><strong>Instructions</strong></h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                <b>Drag</b> the ends of the <b>date slider</b> (top left) or the ends of <b>the timeline</b> (bottom of the page) to
+                                only include dates within a specific time period.
+                            </p>
+                            <p>
+                                <b>Choose</b> a <b>cryptocurrency</b> and a <b>metric from</b> the 2 <b>dropdown</b> lists above.
+                                You can also <b>click on</b> a color in <b>the donut chart</b> to choose the cryptocurrency.
+                            </p>
+                            <p>
+                                <b>Hover</b> over the <b>line graph</b> to see the specific dollar value. Enjoy!
+                            </p>
+                        </div>
+                      <!--
+                      <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                      </div> -->
+                    </div>
+                </div>
+                <span class="my-info">
+                    <b class="orange">by Dan Tran-Ngo</b> | <small>danngo23 at gmail (dot) com</small> | <a href="https://www.linkedin.com/in/dan-tran-ngo/" target="_blank"><small>My LinkedIn</small></a>
+                </span>
+
+            </div>
+
+        </nav>
+        <h1 class="title">Cryptocurrency Market Visualizations</h1>
+        <!-- Bootstrap grid setup -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="selections" class="row">
+                        <div class="col-md-4">
+                            <div id="slider-div">
+                                <!--<label>Date: <span id="dateLabel1">12/05/2013</span> - <span id="dateLabel2">31/10/2017</span></label>-->
+                                <label>Date: <span id="dateLabel1">04/28/2013</span> - <span id="dateLabel2">01/22/2019</span></label>
+                                <div id="date-slider"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <select id="coin-select" class="form-control">
+                                <option selected value="bitcoin">Bitcoin</option>
+                                <option value="ethereum">Ethereum</option>
+                                <option value="bitcoin_cash">Bitcoin Cash</option>
+                                <option value="litecoin">Litecoin</option>
+                                <option value="ripple">Ripple</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select id="var-select" class="form-control">
+                                <option selected value="price_usd">Price in dollars</option>
+                                <option value="market_cap">Market capitalization</option>
+                                <option value="24h_vol">24 hour trading volume</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="line-area"></div>
+                            <div id="timeline-area"></div>
+                        </div> 
+                        <div class="col-md-4">
+                            <div id="donut-area1"></div>
+                            <div id="donut-area2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- External JS libraries -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/lineChart.js"></script>
+        <script src="js/donutChart.js"></script>
+        <script src="js/timeline.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
