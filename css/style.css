@@ -1,0 +1,99 @@
+#donut-area1 svg, #donut-area2 svg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#logo {
+  height:50px;
+}
+
+.navbar-brand {
+  height: 60px;
+  padding: 5px 0px;
+}
+
+body {
+  background-color: #efe6d7;
+}
+
+.graph-svg-component {
+    background-color: #FFF;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D4D8DA;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #F1F3F3;
+  stroke: #777;
+  stroke-width: 3px;
+}
+  
+.hover-line {
+  stroke: #777;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
+
+#selections .col-md-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.my-info {
+    float: right;
+    margin-top: 2rem;
+    font-family: "Courier New";
+	  font-weight: 600;
+    font-size: medium;
+}
+
+.orange {
+    color: #fcad02;
+}
+
+.btn {
+    background-color: #fcad02;
+    color: #FFF;
+    font-size: large;
+    text-decoration: none;
+    /*padding: 1.2rem 1rem;*/
+    /*display: inline-block;*/
+    margin-left: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    /*float: right;*/
+    /*padding-top: 18px;*/
+  
+    /*position: absolute;*/
+    
+}
+
+.title {
+    text-align: center;
+    /*color: #f27b04;*/
+    /*color: #ed6009;*/
+    color: #fcad02;
+    font-family: "Georgia", serif;
+    font-weight: 600;
+}
